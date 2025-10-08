@@ -9,24 +9,25 @@
   <body>
     <div class="container">
       <h1>Kanban Board</h1>
+      <form class="input">
+        <input type="textarea" id="newCard">
+        <button type="submit" id="addCard" ><i class="fa-solid fa-plus "></i></button>
+      </form>
 
       <div class="board" id="board">
-
-        <div class="section section1" id="section1 section">
+        <div class="section start" id="start">
           <h2 id="status">Not Started</h2>
 
-          <div class="card" draggable="true" id="card1 card">Fix Car</div>
-          <div class="card" draggable="true" id="card2 card">Buy Salt</div>
         </div>
         
-        <div class="section section2" id="section2 section">
+        <div class="section inProgress" id="inProgress">
           <h2>In Progress</h2>
           
 
 
         </div>
         
-        <div class="section section3" id="section3 section">
+        <div class="section done" id="done">
           <h2>Done</h2>
 
 
@@ -36,8 +37,8 @@
       </div>
     </div>
 
-
-
+    <script src="src/confetea.js"></script>
+    <script src="https://kit.fontawesome.com/44b6a98760.js" crossorigin="anonymous"></script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
