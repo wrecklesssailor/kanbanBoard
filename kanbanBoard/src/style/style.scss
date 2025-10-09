@@ -1,9 +1,11 @@
-$backgroundColor: #f1f1f1;
-$listBackgroundColor: #afafaf88;
-$listHoverColor: #afafaf;
-$cardBackgroundColor: #f1f1f1;
-$cardActiveColor: #e0d9d9;
-$textColor: #333;
+$backgroundColor: #f0efeb;
+$listBackgroundColor: #eae4e9;
+$listHoverColor: #dfe7fd;
+$cardBackgroundColor: #f0efeb;
+$cardDeleteColor: #f86666;
+$cardActiveColor: #e2ece9;
+$textColor: rgba(90, 89, 89, 0.808);
+
 
 * {
     margin: 0;
@@ -58,7 +60,7 @@ h1 {
         font-size: 1.1rem;
         margin-left: 20px;
         padding: 10px 20px;
-        background-color: #47bbf1;
+        background-color: #cddafd;
         color: white;
         border: none;
         border-radius: 4px;
@@ -92,7 +94,7 @@ h1 {
 }
 
 .dragOver {
-    background-color: #595a5a;
+    background-color: $listHoverColor;
 }
 
 .card {
@@ -119,7 +121,7 @@ h1 {
     align-items: center;
   }
 
-  .list {
+  .section {
     width: 80%;
     margin-bottom: 20px;
   }
